@@ -1,0 +1,16 @@
+#image must be the first token in the data file
+image: Player.png
+cellWidth: 223
+cellHeight: 101
+
+Animation RunLeft
+numFrames RunLeft 1
+startFrame RunLeft 0
+frameRate RunLeft 0.2
+
+Animation RunRight
+numFrames RunRight 1
+startFrame RunRight 1
+frameRate RunRight 0.2
+
+defaultAnimation RunRight

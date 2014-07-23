@@ -1,0 +1,36 @@
+﻿Build started 7/23/2014 4:55:18 PM.
+     1>Project "C:\School\GitHub\TankGame\TankGame\TankGame\TankGame.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SDL_In_Class.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ExampleGame.cpp
+         ExampleGame.cpp
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(51): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(63): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(297): warning C4244: 'initializing' : conversion from 'float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(299): warning C4244: 'initializing' : conversion from 'float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(301): warning C4244: 'initializing' : conversion from 'float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(303): warning C4244: 'initializing' : conversion from 'float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(327): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(342): warning C4244: '=' : conversion from 'const float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(343): warning C4244: '=' : conversion from 'const float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(376): warning C4244: '=' : conversion from 'float' to 'Sint16', possible loss of data
+     1>c:\school\github\tankgame\tankgame\tankgame\examplegame.cpp(377): warning C4244: '=' : conversion from 'float' to 'Sint16', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\School\GitHub\TankGame\TankGame\Debug\TankGame.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\School\GitHub\TankGame\TankGame\Debug\TankGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\School\GitHub\TankGame\TankGame\Debug\TankGame.lib" /MACHINE:X86 Debug\Character.obj
+         Debug\ExampleGame.obj
+         Debug\Game.obj
+         Debug\Level.obj
+         Debug\main.obj
+         Debug\MathUtils.obj
+         Debug\Player.obj
+         Debug\Sprite.obj
+         Debug\SpriteAnimation.obj
+         "..\..\..\..\SDL-devel-1.2.15-VC\SDL-1.2.15\lib\x86\SDL.lib"
+         "..\..\..\..\SDL-devel-1.2.15-VC\SDL-1.2.15\lib\x86\SDLmain.lib"
+         "..\..\..\..\SDL_image-1.2.12\lib\x86\SDL_image.lib"
+         TankGame.vcxproj -> C:\School\GitHub\TankGame\TankGame\Debug\TankGame.exe
+     1>Done Building Project "C:\School\GitHub\TankGame\TankGame\TankGame\TankGame.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.16
