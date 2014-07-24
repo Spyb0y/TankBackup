@@ -19,6 +19,7 @@ void ExampleGame::loadAssets()
 	pPlayerOne_ = new Player(Vec2(100.0f, 1000.0f));
 	camera_.x = pPlayerOne_->GetPos().x - (SCREEN_WIDTH / 2.0f);
 	camera_.y = pPlayerOne_->GetPos().y - (SCREEN_HEIGHT / 2.0f);
+	pGunOne_ = new Gun(Vec2(pPlayerOne_->GetPos().x, pPlayerOne_->GetPos().y));
 
 	pPlayerTwo_ = new Character(Character::CharacterType::PLAYER, Vec2(400.0f, 200.0f));
 	//-----------------------------------------------
@@ -277,6 +278,7 @@ const int MAX_COLLISION_CHECKS = 10;
 void ExampleGame::update(float deltaTime)
 {
 	pPlayerOne_->Update(deltaTime);
+	//PGunOne_->Update(deltaTime);
 
 	for (int i = 0; i < MAX_COLLISION_CHECKS && perPixelCollision(pPlayerOne_, pPlayerTwo_); ++i)
 	{
@@ -321,6 +323,7 @@ void ExampleGame::drawLevel()
 		}
 	}
 
+	//	pGunOne_->Draw(pDisplay_);
 	bool playerDrawn = false;
 	float playerBase = pPlayerOne_->GetPos().y + (pPlayerOne_->GetHeight() / 2.0f);
 	const std::vector<Level::Object>& objects = pLevel_->GetObjects();
@@ -386,6 +389,7 @@ void ExampleGame::renderLevelTile(Uint16 row, Uint16 col,
 void ExampleGame::draw()
 {
 	drawLevel();
+	pGunOne_->Draw(pDisplay_);
 	pPlayerTwo_->Draw(pDisplay_, camera_);
 	Game::draw();
 }

@@ -7,10 +7,10 @@
 #include "SDL_image.h"
 
 
-Gun::Gun(GunType type, const Vec2& pos)
+Gun::Gun(const Vec2& pos)
 {
-	LoadGun(type);
 	pos_ = pos;
+	LoadGun();
 }
 
 
@@ -18,20 +18,20 @@ Gun::~Gun(void)
 {
 }
 
-void Gun::LoadGun(GunType type)
+void Gun::LoadGun()
 {
 	std::ifstream gunData;
 	std::string filename;
 
-	switch (type)
+	/*switch (type)
 	{
-	case STANDARDGUN:
-		filename = "Player.dat";
-		break;
+	case STANDARDGUN:*/
+		filename = "Gun.dat";
+		/*break;
 
 	default:
 		break;
-	}
+	}*/
 
 	gunData.open(filename, std::ios::in);
 

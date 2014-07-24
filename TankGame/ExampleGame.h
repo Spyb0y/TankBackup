@@ -2,6 +2,7 @@
 #include "Game.h"
 #include "Player.h"
 #include "Level.h"
+#include "Gun.h"
 
 class ExampleGame : public Game
 {
@@ -34,7 +35,7 @@ protected:
 
 	//-------test code----------
 	Player* pPlayerOne_;
-	//Gun* pGunOne_;
+	Gun* pGunOne_;
 	Character* pPlayerTwo_;
 	Level* pLevel_;
 

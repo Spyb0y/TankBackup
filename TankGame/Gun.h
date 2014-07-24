@@ -19,9 +19,8 @@ protected:
 	void processDataFile(std::ifstream& file);
 
 public:
-	Gun(GunType type, const Vec2& pos);
-	Gun(const Vec2& pos) { pos_ = pos; }
-	virtual void LoadGun(GunType type);
+	Gun(const Vec2& pos);
+	virtual void LoadGun();
 	~Gun(void);
 
 	Vec2 GetVel()
