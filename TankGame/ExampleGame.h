@@ -34,6 +34,7 @@ protected:
 
 	//-------test code----------
 	Player* pPlayerOne_;
+	//Gun* pGunOne_;
 	Character* pPlayerTwo_;
 	Level* pLevel_;
 
